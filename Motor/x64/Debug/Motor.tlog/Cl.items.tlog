@@ -1,5 +1,13 @@
+C:\Users\Cesar\source\repos\Motor\Motor\Camera2D.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\Camera2D.obj
 C:\Users\Cesar\source\repos\Motor\Motor\Error.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\Error.obj
+C:\Users\Cesar\source\repos\Motor\Motor\GLS_Program.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\GLS_Program.obj
+C:\Users\Cesar\source\repos\Motor\Motor\ImageLoader.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\ImageLoader.obj
+C:\Users\Cesar\source\repos\Motor\Motor\InputManager.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\InputManager.obj
+C:\Users\Cesar\source\repos\Motor\Motor\IOManager.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\IOManager.obj
 C:\Users\Cesar\source\repos\Motor\Motor\main.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\main.obj
 C:\Users\Cesar\source\repos\Motor\Motor\MainGame.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\MainGame.obj
+C:\Users\Cesar\source\repos\Motor\Motor\picoPNG.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\picoPNG.obj
+C:\Users\Cesar\source\repos\Motor\Motor\ResourceManager.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\ResourceManager.obj
 C:\Users\Cesar\source\repos\Motor\Motor\Sprite.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\Sprite.obj
+C:\Users\Cesar\source\repos\Motor\Motor\TextureCache.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\TextureCache.obj
 C:\Users\Cesar\source\repos\Motor\Motor\Window.cpp;C:\Users\Cesar\source\repos\Motor\Motor\x64\Debug\Window.obj

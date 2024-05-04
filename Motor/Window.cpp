@@ -34,7 +34,7 @@ int Window::create(string windowName, int screenWidth, int screenHeight, int cur
 		fatalError("No se puede inicializar glew.");
 	}
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
-	glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	//glClearDepth(1.0f);
 	return 0;
 }

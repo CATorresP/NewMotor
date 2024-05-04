@@ -4,6 +4,10 @@
 #include "GL/eglew.h"
 #include <iostream>
 #include "Window.h"
+#include "GLS_Program.h"
+#include <vector>
+#include <cstdlib>
+
 using namespace std;
 enum class GameState {
 	PLAY,
@@ -12,15 +16,21 @@ enum class GameState {
 
 class MainGame
 {
+	vector<Sprite> sprites;
 	Sprite sprite;
 	int width, height;
 	//SDL_Window* window;
 	Window* window;
+	GLS_Program program;
+	float time = 0;
+	vector<string> imagePathPull;
+	//size_t numVisibleSprites = 0;
 public:
 	GameState gameState;
 private:
 	void init();
 	void processInput();
+	void initShaders();
 public:
 	MainGame();
 	~MainGame();
