@@ -79,21 +79,22 @@ void MainGame::draw()
 	program.use();
 	GLuint timeLocationID = program.getUniformLocation("time");
 	glUniform1f(timeLocationID, time);
-	if (int(time * 50000) % 10000 == 0) {
+	if (ticks % 10000 == 0) {
 		Sprite newSprite;
 		size_t i_image = rand() % imagePathPull.size();
 		newSprite.init(
-			float(rand() % 10) / 10 - 1,
-			float(rand() % 10) / 10 - 1, 
+			float(rand() % 100) / 100 - 1,
+			float(rand() % 100) / 100 - 1, 
 			1, 1, 
 			imagePathPull[i_image]);
 		sprites.push_back(newSprite);
 	}
-	sprite.draw();
+	//sprite.draw();
 	for (auto it : sprites) {
 		it.draw();
 	}
 	time += 0.0002;
+	ticks++;
 	program.unuse();
 	window->swapWindow();
 }
