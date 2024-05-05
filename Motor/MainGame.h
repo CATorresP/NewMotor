@@ -23,6 +23,7 @@ class MainGame
 	Window* window;
 	GLS_Program program;
 	float time = 0;
+	size_t ticks = 0;
 	vector<string> imagePathPull;
 	//size_t numVisibleSprites = 0;
 public:
