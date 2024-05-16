@@ -11,11 +11,13 @@ class GLS_Program
 private:
 	GLuint programID, vertexShaderID, fragmentShaderID;
 	int numAttribute;
-	void compileShader(const string& shaderPath, GLuint id);
+	//GLuint compileShader(const string& shaderPath, GLuint id);
+	GLuint compileShader(const string& shaderPath, GLenum shaderType);
 public:
 	GLS_Program();
 	~GLS_Program();
 	void compileShaders(const string& vertexShaderFilePath, const string& fragmentShaderFilePath);
+	void init();
 	void linkShader();
 	void addAttribute(const string attributeName);
 	void use();

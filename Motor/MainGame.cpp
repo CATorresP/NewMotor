@@ -29,6 +29,7 @@ void MainGame::processInput()
 
 void MainGame::initShaders()
 {
+	program.init();
 	program.compileShaders("Shaders/ColorShaderVert.txt", "Shaders/ColorShaderFrag.txt");
 	program.addAttribute("vertexPosition");
 	program.addAttribute("vertexColor");
