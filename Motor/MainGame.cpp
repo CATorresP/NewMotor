@@ -51,11 +51,8 @@ MainGame::~MainGame()
 void MainGame::run()
 {
 	init();
-	//sprite.init(-1,-1,1,1);
-	float x, y;
-	x = float(rand() % 10) / 10 - 1;
-	y = float(rand() % 10) / 10 - 1;
-	sprite.init(x, y, 1, 1, "Images/mario64.png");
+	// sprite.init(-1,-1,1,1);
+	// sprite.init(x, y, 1, 1, "Images/mario64.png");
 
 	imagePathPull.push_back("Images/mario64.png");
 	imagePathPull.push_back("Images/mariokart64.png");
@@ -64,11 +61,6 @@ void MainGame::run()
 	imagePathPull.push_back("Images/Super_Paper_Mario.png");
 	imagePathPull.push_back("Images/Super_Smash_Bros_Brawl.png");
 
-	for (int i = 0; i < 6; ++i) {
-	}
-	for (auto it : sprites) {
-
-	}
 	update();
 }
 
@@ -80,6 +72,7 @@ void MainGame::draw()
 	GLuint timeLocationID = program.getUniformLocation("time");
 	glUniform1f(timeLocationID, time);
 	if (ticks % 10000 == 0) {
+		/*
 		Sprite newSprite;
 		size_t i_image = rand() % imagePathPull.size();
 		newSprite.init(
@@ -88,10 +81,19 @@ void MainGame::draw()
 			1, 1, 
 			imagePathPull[i_image]);
 		sprites.push_back(newSprite);
+		*/
+		sprites.emplace_back(
+			float(rand() % 100) / 100 - 1, float(rand() % 100) / 100 - 1,
+			1, 1,
+			imagePathPull[rand() % imagePathPull.size()]
+		);
 	}
 	//sprite.draw();
 	for (auto it : sprites) {
-		it.draw();
+		if (it.isVisible) {
+			it.draw();
+		}
+
 	}
 	time += 0.0002;
 	ticks++;

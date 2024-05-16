@@ -1,5 +1,18 @@
 #include "GLS_Program.h"
 
+GLS_Program::GLS_Program() : programID(0), vertexShaderID(0), fragmentShaderID(0), numAttribute(0) { }
+
+GLS_Program::~GLS_Program() { }
+
+void GLS_Program::compileShaders(const string& vertexShaderFilePath, const string& fragmentShaderFilePath)
+{
+	programID = glCreateProgram();
+	vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
+	fragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
+	compileShader(vertexShaderFilePath, vertexShaderID);
+	compileShader(fragmentShaderFilePath, fragmentShaderID);
+}
+
 void GLS_Program::compileShader(const string& shaderPath, GLuint id)
 {
 	string fileContent = "";
@@ -26,24 +39,6 @@ void GLS_Program::compileShader(const string& shaderPath, GLuint id)
 		glDeleteShader(id);
 		return;
 	}
-}
-
-GLS_Program::GLS_Program() : programID(0), vertexShaderID(0), fragmentShaderID(0), numAttribute(0)
-{
-}
-
-GLS_Program::~GLS_Program()
-{
-}
-
-void GLS_Program::compileShaders(const string& vertexShaderFilePath, const string& fragmentShaderFilePath)
-{
-	programID = glCreateProgram();
-	vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
-	fragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
-	compileShader(vertexShaderFilePath, vertexShaderID);
-	compileShader(fragmentShaderFilePath, fragmentShaderID);
-
 }
 
 void GLS_Program::linkShader()

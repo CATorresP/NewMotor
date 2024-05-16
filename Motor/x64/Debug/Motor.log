@@ -1,3 +1,4 @@
-﻿  MainGame.cpp
-C:\Users\Cesar\source\repos\Motor\Motor\MainGame.cpp(96,16): warning C4305: '+=': truncamiento de 'double' a 'float'
+﻿  GLS_Program.cpp
+C:\Users\Cesar\source\repos\Motor\Motor\GLS_Program.cpp(78,29): warning C4267: 'argumento': conversión de 'size_t' a 'GLuint'; posible pérdida de datos
+C:\Users\Cesar\source\repos\Motor\Motor\GLS_Program.cpp(87,30): warning C4267: 'argumento': conversión de 'size_t' a 'GLuint'; posible pérdida de datos
   Motor.vcxproj -> C:\Users\Cesar\source\repos\Motor\x64\Debug\Motor.exe

@@ -17,7 +17,7 @@ enum class GameState {
 class MainGame
 {
 	vector<Sprite> sprites;
-	Sprite sprite;
+	//Sprite sprite;
 	int width, height;
 	//SDL_Window* window;
 	Window* window;
@@ -25,7 +25,6 @@ class MainGame
 	float time = 0;
 	size_t ticks = 0;
 	vector<string> imagePathPull;
-	//size_t numVisibleSprites = 0;
 public:
 	GameState gameState;
 private:
