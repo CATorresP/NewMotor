@@ -54,6 +54,9 @@
     <ClCompile Include="InputManager.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="SpriteBatch.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainGame.h">
@@ -98,5 +101,22 @@
     <ClInclude Include="InputManager.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteBatch.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\ColorShaderFrag.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
+    <Text Include="Shaders\ColorShaderVert.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
+    <Text Include="Shaders\ColorShaderFrag2.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
+    <Text Include="Shaders\ColorShaderVert2.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -7,7 +7,8 @@
 #include "GLS_Program.h"
 #include <vector>
 #include <cstdlib>
-
+#include "Camera2D.h"
+#include "InputManager.h"
 using namespace std;
 enum class GameState {
 	PLAY,
@@ -16,20 +17,23 @@ enum class GameState {
 
 class MainGame
 {
+	InputManager inputManager;
 	vector<Sprite> sprites;
-	//Sprite sprite;
 	int width, height;
-	//SDL_Window* window;
 	Window* window;
+	Camera2D camera;
+	const float CAMERA_SPEED = 0.05f;
+	const float CAMERA_SCALE = 0.1f;
 	GLS_Program program;
 	float time = 0;
-	size_t ticks = 0;
-	vector<string> imagePathPull;
+	//size_t ticks = 0;
+	//vector<string> imagePathPull;
 public:
 	GameState gameState;
 private:
 	void init();
 	void processInput();
+	void handleInput();
 	void initShaders();
 public:
 	MainGame();

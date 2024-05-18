@@ -26,5 +26,11 @@ public:
 	glm::mat4 getCameraMatrix() {
 		return cameraMatrix;
 	}
+	glm::vec2 getPosition() {
+		return position;
+	}
+	float getScale() {
+		return scale;
+	}
 };
 
