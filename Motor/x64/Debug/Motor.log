@@ -1,3 +1,2 @@
-﻿  MainGame.cpp
-C:\Users\Cesar\source\repos\Motor\Motor\MainGame.cpp(96,16): warning C4305: '+=': truncamiento de 'double' a 'float'
+﻿  SpriteBatch.cpp
   Motor.vcxproj -> C:\Users\Cesar\source\repos\Motor\x64\Debug\Motor.exe

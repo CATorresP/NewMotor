@@ -14,7 +14,7 @@ public:
 	Camera2D();
 	~Camera2D();
 	void update();
-	void init(int, int);
+	void init(int screenWidth, int screenHeight);
 	void setPosition(const glm::vec2& newPosition) {
 		position = newPosition;
 		needsUpdateMatrix = true;
@@ -25,6 +25,12 @@ public:
 	}
 	glm::mat4 getCameraMatrix() {
 		return cameraMatrix;
+	}
+	glm::vec2 getPosition() {
+		return position;
+	}
+	float getScale() {
+		return scale;
 	}
 };
 
